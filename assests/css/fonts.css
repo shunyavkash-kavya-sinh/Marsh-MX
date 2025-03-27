@@ -1,0 +1,508 @@
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Regular.eot');
+    src: url('../fonts/Transducer-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Regular.woff2') format('woff2'),
+        url('../fonts/Transducer-Regular.woff') format('woff'),
+        url('../fonts/Transducer-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Regular_1.eot');
+    src: url('../fonts/Transducer-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Regular_1.woff2') format('woff2'),
+        url('../fonts/Transducer-Regular_1.woff') format('woff'),
+        url('../fonts/Transducer-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Regular_2.eot');
+    src: url('../fonts/Transducer-Regular_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Regular_2.woff2') format('woff2'),
+        url('../fonts/Transducer-Regular_2.woff') format('woff'),
+        url('../fonts/Transducer-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Regular_3.eot');
+    src: url('../fonts/Transducer-Regular_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Regular_3.woff2') format('woff2'),
+        url('../fonts/Transducer-Regular_3.woff') format('woff'),
+        url('../fonts/Transducer-Regular_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'Transducer Test Medium Condensed Oblique';
+    src: url('../fonts/Transducer-MediumCondensedOblique.eot');
+    src: url('../fonts/Transducer-MediumCondensedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumCondensedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumCondensedOblique.woff') format('woff'),
+        url('../fonts/Transducer-MediumCondensedOblique.ttf') format('truetype');
+   
+}
+@font-face {
+    font-family: 'Transducer Test Medium Condensed Oblique';
+    src: url('../fonts/Transducer-MediumCondensedOblique.eot');
+    src: url('../fonts/Transducer-MediumCondensedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumCondensedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumCondensedOblique.woff') format('woff'),
+        url('../fonts/Transducer-MediumCondensedOblique.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Transducer Test Medium Condensed Oblique';
+    src: url('../fonts/Transducer-MediumCondensedOblique_1.eot');
+    src: url('../fonts/Transducer-MediumCondensedOblique_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumCondensedOblique_1.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumCondensedOblique_1.woff') format('woff'),
+        url('../fonts/Transducer-MediumCondensedOblique_1.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Transducer Test Medium Condensed Oblique';
+    src: url('../fonts/Transducer-MediumCondensedOblique_2.eot');
+    src: url('../fonts/Transducer-MediumCondensedOblique_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumCondensedOblique_2.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumCondensedOblique_2.woff') format('woff'),
+        url('../fonts/Transducer-MediumCondensedOblique_2.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Transducer Test Medium Condensed Oblique';
+    src: url('../fonts/Transducer-MediumCondensedOblique_3.eot');
+    src: url('../fonts/Transducer-MediumCondensedOblique_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumCondensedOblique_3.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumCondensedOblique_3.woff') format('woff'),
+        url('../fonts/Transducer-MediumCondensedOblique_3.ttf') format('truetype');
+  
+}
+
+@font-face {
+    font-family: 'Transducer Test Medium Condensed Oblique';
+    src: url('../fonts/Transducer-MediumCondensedOblique_4.eot');
+    src: url('../fonts/Transducer-MediumCondensedOblique_4.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumCondensedOblique_4.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumCondensedOblique_4.woff') format('woff'),
+        url('../fonts/Transducer-MediumCondensedOblique_4.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Acumin Pro Wide';
+    src: url('../fonts/AcuminProWide-Regular.eot');
+    src: url('../fonts/AcuminProWide-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AcuminProWide-Regular.woff2') format('woff2'),
+        url('../fonts/AcuminProWide-Regular.woff') format('woff'),
+        url('../fonts/AcuminProWide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Transducer Test Condensed';
+    src:url('/font/Transducer-BoldCondensed.woff2') format('woff2'),
+    url('../fonts/Transducer-BoldCondensed.woff') format('woff');
+    
+}
+
+@font-face {
+    font-family: 'Transducer Test Condensed';
+    src: url('../fonts/Transducer-BoldCondensed.woff2') format('woff2'),
+    url('../fonts/Transducer-BoldCondensed.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Transducer Test Condensed';
+    src: url('../fonts/Transducer-BoldCondensed.woff2') format('woff2'),
+    url('../fonts/Transducer-BoldCondensed.woff') format('woff');
+
+}
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-CondensedBold.eot');
+    src: url('../fonts/Transducer-CondensedBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-CondensedBold.woff2') format('woff2'),
+        url('../fonts/Transducer-CondensedBold.woff') format('woff'),
+        url('../fonts/Transducer-CondensedBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Regular.eot');
+    src: url('../fonts/AcuminPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AcuminPro-Regular.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Regular.woff') format('woff'),
+        url('../fonts/AcuminPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Bold.eot');
+    src: url('../fonts/AcuminPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AcuminPro-Bold.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Bold.woff') format('woff'),
+        url('../fonts/AcuminPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Italic.eot');
+    src: url('../fonts/AcuminPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AcuminPro-Italic.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Italic.woff') format('woff'),
+        url('../fonts/AcuminPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-BoldItalic.eot');
+    src: url('../fonts/AcuminPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AcuminPro-BoldItalic.woff2') format('woff2'),
+        url('../fonts/AcuminPro-BoldItalic.woff') format('woff'),
+        url('../fonts/AcuminPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BoldCondensedOblique.eot');
+    src: url('../fonts/Transducer-BoldCondensedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BoldCondensedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-BoldCondensedOblique.woff') format('woff'),
+        url('../fonts/Transducer-BoldCondensedOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BlackCondensed.eot');
+    src: url('../fonts/Transducer-BlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BlackCondensed.woff2') format('woff2'),
+        url('../fonts/Transducer-BlackCondensed.woff') format('woff'),
+        url('../fonts/Transducer-BlackCondensed.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BoldOblique.eot');
+    src: url('../fonts/Transducer-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BoldOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-BoldOblique.woff') format('woff'),
+        url('../fonts/Transducer-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BoldCondensed.eot');
+    src: url('../fonts/Transducer-BoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BoldCondensed.woff2') format('woff2'),
+        url('../fonts/Transducer-BoldCondensed.woff') format('woff'),
+        url('../fonts/Transducer-BoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-MediumCondensed.eot');
+    src: url('../fonts/Transducer-MediumCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumCondensed.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumCondensed.woff') format('woff'),
+        url('../fonts/Transducer-MediumCondensed.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-HairlineCondensedOblique.eot');
+    src: url('../fonts/Transducer-HairlineCondensedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-HairlineCondensedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-HairlineCondensedOblique.woff') format('woff'),
+        url('../fonts/Transducer-HairlineCondensedOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BlackCondensedOblique.eot');
+    src: url('../fonts/Transducer-BlackCondensedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BlackCondensedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-BlackCondensedOblique.woff') format('woff'),
+        url('../fonts/Transducer-BlackCondensedOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Bold.eot');
+    src: url('../fonts/Transducer-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Bold.woff2') format('woff2'),
+        url('../fonts/Transducer-Bold.woff') format('woff'),
+        url('../fonts/Transducer-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-HairlineCondensed.eot');
+    src: url('../fonts/Transducer-HairlineCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-HairlineCondensed.woff2') format('woff2'),
+        url('../fonts/Transducer-HairlineCondensed.woff') format('woff'),
+        url('../fonts/Transducer-HairlineCondensed.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Black.eot');
+    src: url('../fonts/Transducer-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Black.woff2') format('woff2'),
+        url('../fonts/Transducer-Black.woff') format('woff'),
+        url('../fonts/Transducer-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-MediumCondensedOblique.eot');
+    src: url('../fonts/Transducer-MediumCondensedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumCondensedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumCondensedOblique.woff') format('woff'),
+        url('../fonts/Transducer-MediumCondensedOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BlackOblique.eot');
+    src: url('../fonts/Transducer-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BlackOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-BlackOblique.woff') format('woff'),
+        url('../fonts/Transducer-BlackOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BoldExtendedOblique.eot');
+    src: url('../fonts/Transducer-BoldExtendedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BoldExtendedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-BoldExtendedOblique.woff') format('woff'),
+        url('../fonts/Transducer-BoldExtendedOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-ExtendedOblique.eot');
+    src: url('../fonts/Transducer-ExtendedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-ExtendedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-ExtendedOblique.woff') format('woff'),
+        url('../fonts/Transducer-ExtendedOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-MediumExtended.eot');
+    src: url('../fonts/Transducer-MediumExtended.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumExtended.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumExtended.woff') format('woff'),
+        url('../fonts/Transducer-MediumExtended.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-HairlineOblique.eot');
+    src: url('../fonts/Transducer-HairlineOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-HairlineOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-HairlineOblique.woff') format('woff'),
+        url('../fonts/Transducer-HairlineOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BlackExtendedOblique.eot');
+    src: url('../fonts/Transducer-BlackExtendedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BlackExtendedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-BlackExtendedOblique.woff') format('woff'),
+        url('../fonts/Transducer-BlackExtendedOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Hairline.eot');
+    src: url('../fonts/Transducer-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Hairline.woff2') format('woff2'),
+        url('../fonts/Transducer-Hairline.woff') format('woff'),
+        url('../fonts/Transducer-Hairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-HairlineExtended.eot');
+    src: url('../fonts/Transducer-HairlineExtended.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-HairlineExtended.woff2') format('woff2'),
+        url('../fonts/Transducer-HairlineExtended.woff') format('woff'),
+        url('../fonts/Transducer-HairlineExtended.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BoldExtended.eot');
+    src: url('../fonts/Transducer-BoldExtended.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BoldExtended.woff2') format('woff2'),
+        url('../fonts/Transducer-BoldExtended.woff') format('woff'),
+        url('../fonts/Transducer-BoldExtended.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Extended.eot');
+    src: url('../fonts/Transducer-Extended.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Extended.woff2') format('woff2'),
+        url('../fonts/Transducer-Extended.woff') format('woff'),
+        url('../fonts/Transducer-Extended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-MediumExtendedOblique.eot');
+    src: url('../fonts/Transducer-MediumExtendedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-MediumExtendedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-MediumExtendedOblique.woff') format('woff'),
+        url('../fonts/Transducer-MediumExtendedOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-HairlineExtendedOblique.eot');
+    src: url('../fonts/Transducer-HairlineExtendedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-HairlineExtendedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-HairlineExtendedOblique.woff') format('woff'),
+        url('../fonts/Transducer-HairlineExtendedOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-BlackExtended.eot');
+    src: url('../fonts/Transducer-BlackExtended.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-BlackExtended.woff2') format('woff2'),
+        url('../fonts/Transducer-BlackExtended.woff') format('woff'),
+        url('../fonts/Transducer-BlackExtended.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-CondensedOblique.eot');
+    src: url('../fonts/Transducer-CondensedOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-CondensedOblique.woff2') format('woff2'),
+        url('../fonts/Transducer-CondensedOblique.woff') format('woff'),
+        url('../fonts/Transducer-CondensedOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transducer';
+    src: url('../fonts/Transducer-Condensed.eot');
+    src: url('../fonts/Transducer-Condensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Transducer-Condensed.woff2') format('woff2'),
+        url('../fonts/Transducer-Condensed.woff') format('woff'),
+        url('../fonts/Transducer-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
