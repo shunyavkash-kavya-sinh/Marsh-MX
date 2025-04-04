@@ -1019,6 +1019,7 @@ footer {
 .footer-inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-block {
@@ -1136,4 +1137,10 @@ footer {
 
 .footer-link:hover{
   color:var(--white);
+}
+
+@media  (max-width:640px){
+.footer-inner {
+  flex-direction: column;
+}
 }
