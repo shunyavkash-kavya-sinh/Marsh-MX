@@ -2,8 +2,14 @@ $(document).ready(function () {
   $(".toggle-menu").click(function () {
     $(".menu").toggleClass("active");
   });
-});
 
+  $(".modal-toggle").on("click", function (e) {
+    e.preventDefault();
+    $(".modal").toggleClass("is-visible");
+    $("html, body").toggleClass("off-scroll");
+    $(".img-rot").toggleClass("svg-tras");
+  });
+});
 
 //accordion btn
 
@@ -26,39 +32,10 @@ $(document).ready(function () {
   });
 });
 
-
 var header = $("header").innerHeight() + "px";
 $("body").css("--headerHeight", header);
 
 console.log(header);
-
-var splide3 = new Splide(".bike-slider", {
-  perPage: 2,
-  rewind: true,
-  drag: "free",
-  gap: "32px",
-  arrows: false,
-  pagination: false,
-  breakpoints: {
-    640: {
-      perPage: 1,
-      gap: ".7rem",
-    },
-  },
-});
-
-splide3.mount();
-
-document
-  .getElementsByClassName("pre-btn")[0]
-  .addEventListener("click", function () {
-    splide3.go("-1");
-  });
-document
-  .getElementsByClassName("pre-next")[0]
-  .addEventListener("click", function () {
-    splide3.go("+1");
-  });
 
 new Splide(".auto-scroll-sider", {
   perPage: 2,
@@ -79,30 +56,6 @@ new Splide(".auto-scroll-sider", {
     },
   },
 }).mount();
-
-new Splide(".brand-logo", {
-  type: "loop",
-  drag: "free",
-  focus: "center",
-  perMove: 1,
-  perPage: 8,
-  gap: "50px",
-  arrows: false,
-  pagination: false,
-  autoplay: {
-    speed: 1,
-  },
-  breakpoints: {
-    768: {
-      perPage: 5,
-      gap: "30px",
-    },
-    640: {
-      perPage: 4,
-      gap: "30px",
-    },
-  },
-}).mount(window.splide.Extensions);
 
 new Splide(".social-img", {
   type: "loop",
@@ -128,6 +81,30 @@ new Splide(".social-img", {
     640: {
       perPage: 2,
       gap: "20px",
+    },
+  },
+}).mount(window.splide.Extensions);
+
+new Splide(".brand-logo", {
+  type: "loop",
+  drag: "free",
+  focus: "center",
+  perMove: 1,
+  perPage: 8,
+  gap: "50px",
+  arrows: false,
+  pagination: false,
+  autoplay: {
+    speed: 1,
+  },
+  breakpoints: {
+    768: {
+      perPage: 5,
+      gap: "30px",
+    },
+    640: {
+      perPage: 4,
+      gap: "30px",
     },
   },
 }).mount(window.splide.Extensions);
@@ -163,3 +140,30 @@ var header = $("header").innerHeight() + "px";
 console.log("Header Height : ", header);
 $("body").css("--headerHeight", header);
 
+var splide3 = new Splide(".bike-slider", {
+  perPage: 2,
+  rewind: true,
+  drag: "free",
+  gap: "32px",
+  arrows: false,
+  pagination: false,
+  breakpoints: {
+    640: {
+      perPage: 1,
+      gap: ".7rem",
+    },
+  },
+});
+
+splide3.mount();
+
+document
+  .getElementsByClassName("pre-btn")[0]
+  .addEventListener("click", function () {
+    splide3.go("-1");
+  });
+document
+  .getElementsByClassName("pre-next")[0]
+  .addEventListener("click", function () {
+    splide3.go("+1");
+  });

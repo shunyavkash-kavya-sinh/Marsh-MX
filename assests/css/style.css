@@ -78,6 +78,18 @@ h4,
   color: var(--white) !important;
 }
 
+.btn-tras {
+  background-color: var(--primary);
+  border: 1px solid transparent;
+  color: var(--black) !important;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-tras:hover {
+  background-color: transparent;
+  border: 1px solid var(--black);
+}
+
 .btn-secondery {
   color: var(--white) !important;
   background-color: transparent;
@@ -99,7 +111,7 @@ img {
 header {
   position: fixed;
   width: 100%;
-  height: auto;
+  /* height: 100%; */
   z-index: 999;
 }
 
@@ -443,9 +455,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media (max-width: 1240px) {
-  header {
+  /* header {
     height: 100%;
-  }
+  } */
 
   .top-header {
     display: none;
@@ -1271,7 +1283,7 @@ footer {
 .filter-inner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 50px 34px;
+  gap: 90px 34px;
 }
 
 .box {
@@ -1289,16 +1301,12 @@ footer {
   position: relative;
   width: 100%;
   height: 100%;
+  grid-row: 1/5;
 }
 
 .filter-box {
   position: sticky;
   top: 200px;
-}
-
-.box-1 {
-  color: var(--black);
-  grid-row: 1/5;
 }
 
 .back-to-home {
@@ -1425,8 +1433,13 @@ footer {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--black);
   padding: 50px 70px;
+  background-image: url(../images/section/avb-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ave-title {
@@ -1439,9 +1452,208 @@ footer {
   color: var(--primary);
 }
 
-.ava-dec{
+.ava-dec {
   color: var(--white);
   line-height: 1.5;
   font-size: 16px;
   font-family: var(--acumin-pro);
+  max-width: 472px;
+  height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.more-img-box {
+  display: flex;
+  justify-content: center;
+  grid-column: 2/5;
+}
+
+.res-filter-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.img-rot {
+  display: block;
+}
+
+.res-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.res-filter-btn {
+  visibility: hidden;
+}
+
+@media (max-width: 1400px) {
+  .filter-inner {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .slid-bar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+  }
+
+  .available-box {
+    /* display: none; */
+    grid-column: 2/5;
+  }
+
+  .more-img-box {
+    display: none;
+  }
+}
+
+@media (max-width: 1240px) {
+  .slid-bar {
+    grid-column: 1 / 3;
+    grid-row: 1 / 8;
+  }
+  .available-box {
+    grid-column: 3/5;
+  }
+
+  .filter-inner div:nth-child(11) {
+    display: none;
+  }
+
+  .filter-img {
+    width: 360px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slid-bar {
+    grid-column: 1 / 3;
+    grid-row: 1 / 8;
+  }
+  .available-box {
+    grid-column: 3/5;
+  }
+
+  .filter-inner div:nth-child(11) {
+    display: none;
+  }
+
+  .filter-img {
+    width: 260px;
+    height: 240px;
+  }
+
+  .filter-subtitle {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-inner {
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+
+  .filter-sec {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .res-filter-btn {
+    visibility: visible;
+  }
+
+  .slid-bar {
+    /* grid-column: 1 / 1;
+    grid-row: 1/1; */
+    position: absolute;
+    background-color: var(--white);
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    z-index: 10;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+    /* display: none; */
+  }
+
+  .filter-box {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+
+  .is-visible {
+    left: 0;
+    visibility: visible;
+  }
+
+  .is-visible {
+    opacity: 1;
+  }
+
+  .svg-tras svg{
+    transform: rotate(-90deg);
+  }
+
+  .off-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .available-box {
+    grid-column: 1/3;
+  }
+
+  .more-img-box {
+    grid-column: 1/3;
+  }
+}
+
+@media (max-width: 640px) {
+  .filter-inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .available-box {
+    grid-column: 1/1;
+    /* display: none; */
+  }
+
+  .more-img-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ave-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .available-box {
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .filter-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ava-dec {
+    margin-bottom: 20px;
+  }
 }
