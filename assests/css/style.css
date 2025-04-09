@@ -1771,7 +1771,21 @@ footer {
 }
 
 .add-card-sec {
-  padding: 200px 0px;
+  padding: 100px 0px;
+  padding-bottom:0;
+  position: relative;
+}
+
+.add-card-sec::after{
+  content: '';
+  position: absolute;
+  background-color:var(--gray);
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 70%;
+  height: 90%;
+  clip-path: polygon(36% 0,100% 0,100% 100%,0 100%);
 }
 
 .view-blog {
