@@ -1,41 +1,69 @@
 $(document).ready(function () {
-  $(".toggle-menu").click(function () {
-    $(".menu").toggleClass("active");
-  });
+  if (document.querySelector(".toggle-menu")) {
+    $(".toggle-menu").click(function () {
+      $(".menu").toggleClass("active");
+    });
+  }
 
-  $(".modal-toggle").on("click", function (e) {
-    e.preventDefault();
-    $(".modal").toggleClass("is-visible");
-    $("html, body").toggleClass("off-scroll");
-    $(".img-rot").toggleClass("svg-tras");
-  });
-});
+  //header menu
 
-//accordion btn
+  if (document.querySelector(".modal-toggle")) {
+    $(".modal-toggle").on("click", function (e) {
+      e.preventDefault();
+      $(".modal").toggleClass("is-visible");
+      $("html, body").toggleClass("off-scroll");
+      $(".img-rot").toggleClass("svg-tras");
+    });
+  }
 
-$(document).ready(function () {
-  $(".accordion-content").hide();
+  //modal-box
 
-  $(".accordion-header").click(function () {
-    let content = $(this).next(".accordion-content");
+  if (document.querySelector(".accordion-content")) {
+    $(".accordion-content").hide();
+    $(".accordion-header").click(function () {
+      let content = $(this).next(".accordion-content");
 
-    if (content.is(":visible")) {
-      content.slideUp();
-      $(this).removeClass("active-ac");
+      if (content.is(":visible")) {
+        content.slideUp();
+        $(this).removeClass("active-ac");
+      } else {
+        $(".accordion-content").slideUp();
+        $(".accordion-header").removeClass("active-ac");
+
+        content.slideDown();
+        $(this).addClass("active-ac");
+      }
+    });
+  }
+
+  //accordion btn
+
+  var header = $("header").innerHeight() + "px";
+  $("body").css("--headerHeight", header);
+  console.log(header);
+
+  //header height
+
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 30) {
+      $("header").addClass("header-change");
     } else {
-      $(".accordion-content").slideUp();
-      $(".accordion-header").removeClass("active-ac");
-
-      content.slideDown();
-      $(this).addClass("active-ac");
+      $("header").removeClass("header-change");
     }
   });
+
+  // header change;
 });
 
-var header = $("header").innerHeight() + "px";
-$("body").css("--headerHeight", header);
+// swiper slider script
 
-console.log(header);
+// In your Javascript (external .js resource or <script> tag)
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+    $(".js-example-basic-single").select2({
+      minimumResultsForSearch: Infinity,
+    });
+});
 
 new Splide(".auto-scroll-sider", {
   perPage: 2,
@@ -126,19 +154,6 @@ linerSilder.on("mounted move", function () {
 });
 
 linerSilder.mount();
-
-$(document).ready(function () {
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 30) {
-      $("header").addClass("header-change");
-    } else {
-      $("header").removeClass("header-change");
-    }
-  });
-});
-var header = $("header").innerHeight() + "px";
-console.log("Header Height : ", header);
-$("body").css("--headerHeight", header);
 
 var splide3 = new Splide(".bike-slider", {
   perPage: 2,
