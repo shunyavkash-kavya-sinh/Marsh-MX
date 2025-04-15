@@ -57,35 +57,7 @@ $(document).ready(function () {
 
 // swiper slider script
 
-// In your Javascript (external .js resource or <script> tag)
-$(document).ready(function() {
-    $('.js-example-basic-single').select2();
-    $(".js-example-basic-single").select2({
-      minimumResultsForSearch: Infinity,
-    });
-});
-
-new Splide(".auto-scroll-sider", {
-  perPage: 2,
-  rewind: true,
-  drag: "free",
-  gap: "32px",
-  arrows: false,
-  pagination: false,
-  gap: "150px",
-  breakpoints: {
-    768: {
-      perPage: 2,
-      gap: "30px",
-    },
-    640: {
-      perPage: 1,
-      gap: "30px",
-    },
-  },
-}).mount();
-
-new Splide(".social-img", {
+var socialImg = new Splide(".social-img", {
   type: "loop",
   drag: "free",
   focus: "center",
@@ -111,9 +83,47 @@ new Splide(".social-img", {
       gap: "20px",
     },
   },
-}).mount(window.splide.Extensions);
+});
+socialImg.mount(window.splide.Extensions);
 
-new Splide(".brand-logo", {
+// In your Javascript (external .js resource or <script> tag)
+$(document).ready(function () {
+  $(".js-example-basic-single").select2();
+  $(".js-example-basic-single").select2({
+    minimumResultsForSearch: Infinity,
+  });
+
+  var reviewSlider = new Splide(".review-slider", {
+    perPage: 1,
+    gap: "2rem",
+    arrows: false,
+  });
+
+  reviewSlider.mount();
+});
+
+var autoScroll = new Splide(".auto-scroll-sider", {
+  perPage: 2,
+  rewind: true,
+  drag: "free",
+  gap: "32px",
+  arrows: false,
+  pagination: false,
+  gap: "150px",
+  breakpoints: {
+    768: {
+      perPage: 2,
+      gap: "30px",
+    },
+    640: {
+      perPage: 1,
+      gap: "30px",
+    },
+  },
+});
+autoScroll.mount();
+
+var brandLogo = new Splide(".brand-logo", {
   type: "loop",
   drag: "free",
   focus: "center",
@@ -135,7 +145,8 @@ new Splide(".brand-logo", {
       gap: "30px",
     },
   },
-}).mount(window.splide.Extensions);
+});
+brandLogo.mount(window.splide.Extensions);
 
 var linerSilder = new Splide(".liner-silder", {
   type: "loop",
@@ -145,14 +156,13 @@ var linerSilder = new Splide(".liner-silder", {
   perPage: 1,
 });
 
-const bar = linerSilder.root.querySelector(".my-slider-progress-bar");
+const bar = linerSilder.root.querySelector(".my-splide-progress-bar");
 linerSilder.on("mounted move", function () {
   const count = window.innerWidth > 1200 ? 1 : window.innerWidth > 767 ? 2 : 1;
   const end = linerSilder.Components.Controller.getEnd() + count;
   const rate = Math.min((linerSilder.index + 1) / end, 1);
   bar.style.width = String(100 * rate) + "%";
 });
-
 linerSilder.mount();
 
 var splide3 = new Splide(".bike-slider", {
