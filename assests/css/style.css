@@ -2471,6 +2471,15 @@ footer {
 
 .review-img {
   margin-bottom: 33px;
+  width: 110px;
+  height: 110px;
+}
+
+.review-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .review-title,
