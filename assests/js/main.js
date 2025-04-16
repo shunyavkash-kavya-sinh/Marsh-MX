@@ -148,23 +148,6 @@ var brandLogo = new Splide(".brand-logo", {
 });
 brandLogo.mount(window.splide.Extensions);
 
-var linerSilder = new Splide(".liner-silder", {
-  type: "loop",
-  rewind: true,
-  pagination: false,
-  arrows: false,
-  perPage: 1,
-});
-
-const bar = linerSilder.root.querySelector(".my-splide-progress-bar");
-linerSilder.on("mounted move", function () {
-  const count = window.innerWidth > 1200 ? 1 : window.innerWidth > 767 ? 2 : 1;
-  const end = linerSilder.Components.Controller.getEnd() + count;
-  const rate = Math.min((linerSilder.index + 1) / end, 1);
-  bar.style.width = String(100 * rate) + "%";
-});
-linerSilder.mount();
-
 var splide3 = new Splide(".bike-slider", {
   perPage: 2,
   rewind: true,
@@ -192,3 +175,20 @@ document
   .addEventListener("click", function () {
     splide3.go("+1");
   });
+
+var linerSilder = new Splide(".liner-silder", {
+  type: "loop",
+  rewind: true,
+  pagination: false,
+  arrows: false,
+  perPage: 1,
+});
+
+const bar = linerSilder.root.querySelector(".my-splide-progress-bar");
+linerSilder.on("mounted move", function () {
+  const count = window.innerWidth > 1200 ? 1 : window.innerWidth > 767 ? 2 : 1;
+  const end = linerSilder.Components.Controller.getEnd() + count;
+  const rate = Math.min((linerSilder.index + 1) / end, 1);
+  bar.style.width = String(100 * rate) + "%";
+});
+linerSilder.mount();
