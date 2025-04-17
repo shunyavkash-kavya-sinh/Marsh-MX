@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  $(".js-example-basic-single").select2();
+  $(".js-example-basic-single").select2({
+    minimumResultsForSearch: Infinity,
+  });
+
+  var reviewSlider = new Splide(".review-slider", {
+    perPage: 1,
+    gap: "2rem",
+    arrows: false,
+  });
+
+  reviewSlider.mount();
+});
+
+$(document).ready(function () {
   if (document.querySelector(".toggle-menu")) {
     $(".toggle-menu").click(function () {
       $(".menu").toggleClass("active");
@@ -87,21 +102,6 @@ var socialImg = new Splide(".social-img", {
 socialImg.mount(window.splide.Extensions);
 
 // In your Javascript (external .js resource or <script> tag)
-$(document).ready(function () {
-  $(".js-example-basic-single").select2();
-  $(".js-example-basic-single").select2({
-    minimumResultsForSearch: Infinity,
-  });
-
-  var reviewSlider = new Splide(".review-slider", {
-    perPage: 1,
-    gap: "2rem",
-    arrows: false,
-  });
-
-  reviewSlider.mount();
-});
-
 var autoScroll = new Splide(".auto-scroll-sider", {
   perPage: 2,
   rewind: true,
@@ -125,11 +125,10 @@ autoScroll.mount();
 
 var brandLogo = new Splide(".brand-logo", {
   type: "loop",
-  drag: "free",
   focus: "center",
   perMove: 1,
-  perPage: 8,
-  gap: "50px",
+  perPage: 5,
+  gap: "20px",
   arrows: false,
   pagination: false,
   autoplay: {
@@ -137,11 +136,11 @@ var brandLogo = new Splide(".brand-logo", {
   },
   breakpoints: {
     768: {
-      perPage: 5,
+      perPage: 4,
       gap: "30px",
     },
     640: {
-      perPage: 4,
+      perPage: 3,
       gap: "30px",
     },
   },
