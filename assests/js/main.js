@@ -31,6 +31,22 @@ $(document).ready(function () {
     });
   }
 
+  if (document.querySelector(".modal-tog")) {
+    $(".modal-tog").on("click", function (e) {
+      e.preventDefault();
+      $(".open-modal").toggleClass("open-visible");
+      $("html, body").toggleClass("off-scroll");
+    });
+  }
+
+  if (document.querySelector(".modal-cal")) {
+    $(".modal-cal").on("click", function (e) {
+      e.preventDefault();
+      $(".open-cal").toggleClass("open-modal-cal");
+      $("html, body").toggleClass("off-scroll");
+    });
+  }
+
   //modal-box
 
   if (document.querySelector(".accordion-content")) {
@@ -68,6 +84,24 @@ $(document).ready(function () {
   });
 
   // header change;
+
+  const sliders = document.querySelectorAll(".slider");
+  function updateSliderBackground(slider) {
+    const min = parseInt(slider.min);
+    const max = parseInt(slider.max);
+    const val = parseInt(slider.value);
+    const percentage = ((val - min) / (max - min)) * 100;
+    slider.style.background = `linear-gradient(to right, brown ${percentage}%, #ddd ${percentage}%)`;
+  }
+  sliders.forEach((slider) => {
+    updateSliderBackground(slider);
+
+    slider.addEventListener("input", () => {
+      updateSliderBackground(slider);
+    });
+  });
+
+  // range js
 });
 
 // swiper slider script
