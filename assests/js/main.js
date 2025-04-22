@@ -47,6 +47,27 @@ $(document).ready(function () {
     });
   }
 
+  if (document.querySelector(".modal-part")) {
+    $(".modal-part").on("click", function (e) {
+      e.preventDefault();
+      $(".open-part").toggleClass("open-modal-part");
+      $(".value-box").toggleClass("value-box-none");
+      $("html, body").toggleClass("off-scroll");
+    });
+
+    if (document.querySelector(".value-part")) {
+      $(".value-part").on("click", function (e) {
+        e.preventDefault();
+        $(".open-value").toggleClass("open-modal-value");
+        $("html, body").toggleClass("off-scroll");
+        $("html, body").toggleClass("off-scroll");
+        $(".part-box").toggleClass("part-box-none");
+        $(".value-box").toggleClass("value-box-none");
+      });
+    }
+  }
+  //value
+
   //modal-box
 
   if (document.querySelector(".accordion-content")) {
