@@ -3708,7 +3708,82 @@ body
 @media (max-width: 768px) {
   .add-card-blog {
     max-width: 100%;
-   width: 100%;
- 
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 0;
   }
+
+  .card-bottom-img {
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+  }
+}
+
+.main-basket-sec {
+  padding: 200px 0px;
+}
+
+.mainbox-tow-col {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.flex-grow-col-1 {
+  flex-grow: 3;
+}
+
+.basket-main-block {
+  min-height: 200px;
+  padding: 12px 0px;
+}
+
+.main-basket-col {
+  width: 100%;
+}
+
+.basket-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.305);
+  border-inline: 0;
+  min-height: 200px;
+}
+
+.updeta-block {
+  display: flex;
+  justify-content: end;
+  padding: 12px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.305);
+}
+
+.sub-title-box {
+  display: flex;
+  gap: 45px;
+}
+
+.main-basket-col form {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  width: 100%;
+}
+
+.main-basket-sec input[type="text"] {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+  padding: 12px 0;
+}
+
+.basket-inputbox {
+  width: 100%;
+}
+
+.basket-col-title {
+  display: flex;
+  justify-content: space-between;
 }
