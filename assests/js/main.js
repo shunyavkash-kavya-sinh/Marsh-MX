@@ -65,6 +65,14 @@ $(document).ready(function () {
         $(".value-box").toggleClass("value-box-none");
       });
     }
+
+    if (document.querySelector(".modal-cardbox")) {
+      $(".modal-cardbox").on("click", function (e) {
+        e.preventDefault();
+        $(".open-card-box").toggleClass("open-modal-cardbox");
+        $("html, body").toggleClass("off-scroll");
+      });
+    }
   }
   //value
 
