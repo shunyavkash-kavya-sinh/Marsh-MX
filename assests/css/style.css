@@ -106,6 +106,7 @@ label {
   letter-spacing: 1px;
   font-size: 14px;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -3722,10 +3723,12 @@ body
 
 .main-basket-sec {
   padding: 200px 0px;
+  padding-bottom: 50px;
 }
 
 .mainbox-tow-col {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 70px;
 }
@@ -3739,7 +3742,13 @@ body
   padding: 12px 0px;
 }
 
-.main-basket-col {
+.main-basket-col-1 {
+  width: 100%;
+  min-width: 60%;
+  flex-shrink: calc(100%);
+}
+
+.main-basket-col-2 {
   width: 100%;
 }
 
@@ -3747,8 +3756,10 @@ body
   display: flex;
   justify-content: space-between;
   padding: 12px 0px;
-  border: 1px solid rgba(0, 0, 0, 0.305);
-  border-inline: 0;
+}
+
+.basket-main-col {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.305);
   min-height: 200px;
 }
 
@@ -3757,6 +3768,7 @@ body
   justify-content: end;
   padding: 12px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.305);
+  margin-bottom: 10px;
 }
 
 .sub-title-box {
@@ -3764,7 +3776,7 @@ body
   gap: 45px;
 }
 
-.main-basket-col form {
+.main-basket-sec form {
   display: flex;
   gap: 22px;
   align-items: center;
@@ -3777,6 +3789,11 @@ body
   border: 0;
   border-bottom: 1px solid black;
   padding: 12px 0;
+  font-size: 16px;
+}
+
+.main-basket-sec ::-webkit-input-placeholder {
+  font-size: 16px;
 }
 
 .basket-inputbox {
@@ -3786,4 +3803,175 @@ body
 .basket-col-title {
   display: flex;
   justify-content: space-between;
+}
+
+.main-basket-sec .btn {
+  width: 100%;
+}
+
+.main-basket-text {
+  font-family: var(--transducer-test-medium-condensed);
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.basket-text {
+  font-family: var(--transducer-test-medium-condensed);
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--black);
+  opacity: 40%;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.basket-dec {
+  text-align: center;
+  font-family: var(--transducer-test-medium-condensed);
+  font-size: 22px;
+  font-weight: 100;
+  color: var(--black);
+}
+
+.main-subtitle {
+  font-size: 12px;
+  font-family: var(--acumin-pro);
+  color: var(--black);
+  font-weight: 100;
+}
+
+.basket-pr-text {
+  margin-top: 18px;
+  font-family: var(--transducer-test-medium-condensed);
+  font-weight: 100;
+}
+
+.payment-btn {
+  margin-top: 28px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.payment-btn .btn:nth-child(2) {
+  background-color: #0298d8;
+  transition: all 300ms ease-in-out;
+}
+
+.payment-btn .btn:nth-child(2):hover {
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: white !important;
+}
+
+.basket-btnsub {
+  font-family: var(--transducer-hairline-extended);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-basket-col-1,
+.main-basket-col-2 {
+  border-top: 1px solid #0000003b;
+  padding: 12px 0px;
+}
+
+@media (max-width: 1024px) {
+  .mainbox-tow-col {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .basket-btn {
+    width: 100%;
+  }
+
+  .payment-btn {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 640px) {
+  .payment-btn,
+  .main-basket-sec form {
+    flex-direction: column;
+  }
+
+  .basket-text {
+    font-size: 26px;
+    display: none;
+  }
+
+  .updeta-block {
+    justify-content: start;
+  }
+
+  .sub-title-box {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .main-basket-sec {
+    padding: 150px 0px;
+    padding-bottom: 50px;
+  }
+
+  .basket-text-v2 {
+    font-size: 30pt;
+    display: flex !important  ;
+  }
+
+  .basket-pr-text {
+    font-size: 40pt;
+  }
+}
+
+.basket-bg-sec {
+  padding: 100px 0;
+  background-image: url(../images/section/bas-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-color: #00000054;
+  background-blend-mode: darken;
+}
+
+.basket-bg-wrap {
+  color: var(--white);
+  display: flex;
+  gap: 66px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.basket-bg-title {
+  font-family: var(--transducer-hairline-extended);
+  font-style: italic;
+}
+
+.basket-bg-subtitle {
+  font-family: var(--transducer-test-black-extended);
+}
+
+@media (max-width: 768px) {
+  .basket-bg-wrap {
+    flex-direction: column;
+    text-align: center;
+    gap: 26px;
+  }
+
+  .basket-bg-title {
+    width: 100%;
+  }
+
+  .basket-bg-sec .btn {
+    width: 100%;
+  }
 }
