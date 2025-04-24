@@ -1208,6 +1208,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .social-img-sec {
+  padding: 50px 0px;
   overflow: hidden;
   background-color: var(--black);
 }
@@ -3974,4 +3975,149 @@ body
   .basket-bg-sec .btn {
     width: 100%;
   }
+}
+
+.checkout-sec {
+  position: relative;
+  height: 100%;
+  min-height: 900px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+}
+
+.check-out-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transform: translateX(30%) translateY(14%);
+}
+
+.check-out-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.checkout-content {
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.checkout-title {
+  font-family: var(--transducer-test-medium-condensed);
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.checkout-dec {
+  text-align: center;
+  font-family: var(--acumin-pro);
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 36px;
+}
+
+.checkbox-btn {
+  display: flex;
+  gap: 16px;
+}
+
+.checkbox-btn .btn {
+  width: 100%;
+}
+
+.checkout-bike-img {
+  display: none;
+  width: 100%;
+  height: 300px;
+}
+
+.checkout-bike-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1240px) {
+  .checkout-sec {
+    min-height: 600px;
+  }
+
+  .checkout-content {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .checkout-sec {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-sec {
+    padding: 150px 0;
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  .checkout-content {
+    max-width: 100%;
+  }
+
+  .checkout-bike-img {
+    display: block;
+  }
+
+  .check-out-bg {
+    display: none;
+  }
+
+  .checkout-sec::after {
+    content: "";
+    position: absolute;
+    background-color: var(--gray);
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .checkbox-btn {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .checkout-title {
+    font-size: 28pt;
+    font-family: var(--transducer-test-black-extended);
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+
+  .checkout-dec {
+    font-size: 16pt;
+    font-weight: 100;
+  }
+}
+
+.par-finder-sec{
+  padding: 200px 0;
 }

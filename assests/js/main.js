@@ -135,6 +135,30 @@ $(document).ready(function () {
 
 // swiper slider script
 
+var brandLogo = new Splide(".brand-logo", {
+  type: "loop",
+  focus: "center",
+  perMove: 1,
+  perPage: 5,
+  gap: "20px",
+  arrows: false,
+  pagination: false,
+  autoplay: {
+    speed: 1,
+  },
+  breakpoints: {
+    768: {
+      perPage: 4,
+      gap: "30px",
+    },
+    640: {
+      perPage: 3,
+      gap: "30px",
+    },
+  },
+});
+brandLogo.mount(window.splide.Extensions);
+
 var socialImg = new Splide(".social-img", {
   type: "loop",
   drag: "free",
@@ -185,30 +209,6 @@ var autoScroll = new Splide(".auto-scroll-sider", {
   },
 });
 autoScroll.mount();
-
-var brandLogo = new Splide(".brand-logo", {
-  type: "loop",
-  focus: "center",
-  perMove: 1,
-  perPage: 5,
-  gap: "20px",
-  arrows: false,
-  pagination: false,
-  autoplay: {
-    speed: 1,
-  },
-  breakpoints: {
-    768: {
-      perPage: 4,
-      gap: "30px",
-    },
-    640: {
-      perPage: 3,
-      gap: "30px",
-    },
-  },
-});
-brandLogo.mount(window.splide.Extensions);
 
 var splide3 = new Splide(".bike-slider", {
   perPage: 2,
