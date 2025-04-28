@@ -13,6 +13,33 @@ $(document).ready(function () {
   reviewSlider.mount();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-btn li a");
+  const articles = document.querySelectorAll(".artical-filter-block");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filterText = this.textContent.trim().toUpperCase();
+
+      articles.forEach((article) => {
+        const articleCategory = article
+          .querySelector(".key-img-title")
+          .textContent.trim()
+          .toUpperCase();
+
+        if (filterText === "VIEW ALL" || articleCategory === filterText) {
+          article.style.display = "block";
+        } else {
+          article.style.display = "none";
+          article.style.opacity = "none";
+        }
+      });
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+});
+
 $(document).ready(function () {
   if (document.querySelector(".toggle-menu")) {
     $(".toggle-menu").click(function () {
@@ -188,7 +215,6 @@ var brandLogo = new Splide(".brand-logo", {
 });
 brandLogo.mount(window.splide.Extensions);
 
-// In your Javascript (external .js resource or <script> tag)
 var autoScroll = new Splide(".auto-scroll-sider", {
   perPage: 2,
   rewind: true,
