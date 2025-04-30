@@ -160,7 +160,35 @@ $(document).ready(function () {
   // range js
 });
 
-// swiper slider script
+// swiper slider
+
+var splide3 = new Splide(".bike-slider", {
+  perPage: 2,
+  rewind: true,
+  drag: "free",
+  gap: "32px",
+  arrows: false,
+  pagination: false,
+  breakpoints: {
+    640: {
+      perPage: 1,
+      gap: "30px",
+    },
+  },
+});
+
+splide3.mount();
+
+document
+  .getElementsByClassName("pre-btn")[0]
+  .addEventListener("click", function () {
+    splide3.go("-1");
+  });
+document
+  .getElementsByClassName("pre-next")[0]
+  .addEventListener("click", function () {
+    splide3.go("+1");
+  });
 
 var socialImg = new Splide(".social-img", {
   type: "loop",
@@ -191,6 +219,44 @@ var socialImg = new Splide(".social-img", {
 });
 socialImg.mount(window.splide.Extensions);
 
+var autoScroll = new Splide(".auto-scroll-sider", {
+  perPage: 2,
+  rewind: true,
+  drag: "free",
+  gap: "32px",
+  arrows: false,
+  pagination: false,
+  gap: "150px",
+  breakpoints: {
+    768: {
+      perPage: 2,
+      gap: "30px",
+    },
+    640: {
+      perPage: 1,
+      gap: "30px",
+    },
+  },
+});
+autoScroll.mount();
+
+var linerSilder = new Splide(".liner-silder", {
+  type: "loop",
+  rewind: true,
+  pagination: false,
+  arrows: false,
+  perPage: 1,
+});
+
+const bar = linerSilder.root.querySelector(".my-splide-progress-bar");
+linerSilder.on("mounted move", function () {
+  const count = window.innerWidth > 1200 ? 1 : window.innerWidth > 767 ? 2 : 1;
+  const end = linerSilder.Components.Controller.getEnd() + count;
+  const rate = Math.min((linerSilder.index + 1) / end, 1);
+  bar.style.width = String(100 * rate) + "%";
+});
+linerSilder.mount();
+
 var brandLogo = new Splide(".brand-logo", {
   type: "loop",
   focus: "center",
@@ -214,69 +280,3 @@ var brandLogo = new Splide(".brand-logo", {
   },
 });
 brandLogo.mount(window.splide.Extensions);
-
-var autoScroll = new Splide(".auto-scroll-sider", {
-  perPage: 2,
-  rewind: true,
-  drag: "free",
-  gap: "32px",
-  arrows: false,
-  pagination: false,
-  gap: "150px",
-  breakpoints: {
-    768: {
-      perPage: 2,
-      gap: "30px",
-    },
-    640: {
-      perPage: 1,
-      gap: "30px",
-    },
-  },
-});
-autoScroll.mount();
-
-var splide3 = new Splide(".bike-slider", {
-  perPage: 2,
-  rewind: true,
-  drag: "free",
-  gap: "32px",
-  arrows: false,
-  pagination: false,
-  breakpoints: {
-    640: {
-      perPage: 1,
-      gap: ".7rem",
-    },
-  },
-});
-
-splide3.mount();
-
-document
-  .getElementsByClassName("pre-btn")[0]
-  .addEventListener("click", function () {
-    splide3.go("-1");
-  });
-document
-  .getElementsByClassName("pre-next")[0]
-  .addEventListener("click", function () {
-    splide3.go("+1");
-  });
-
-var linerSilder = new Splide(".liner-silder", {
-  type: "loop",
-  rewind: true,
-  pagination: false,
-  arrows: false,
-  perPage: 1,
-});
-
-const bar = linerSilder.root.querySelector(".my-splide-progress-bar");
-linerSilder.on("mounted move", function () {
-  const count = window.innerWidth > 1200 ? 1 : window.innerWidth > 767 ? 2 : 1;
-  const end = linerSilder.Components.Controller.getEnd() + count;
-  const rate = Math.min((linerSilder.index + 1) / end, 1);
-  bar.style.width = String(100 * rate) + "%";
-});
-linerSilder.mount();
