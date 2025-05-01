@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marsh-MX</title>
 
+    <!-- Select2  link css-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- fancy-box css link -->
+    <link rel="stylesheet" href="assests/css/jquery.fancybox.min.css">
+
     <!-- splide link css-->
     <link rel="stylesheet" href="assests/css/splide.min.css">
 
@@ -18,7 +24,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="top-header">
             <div class="container">
@@ -457,7 +462,7 @@
                         <ul class="icone-menu">
                             <li>
                                 <div class="icone-box">
-                                    <a href="javascript:void(0)" class="icon-dec">
+                                    <a href="javascript:void(0)" class="icon-dec modal-cardbox">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
@@ -503,7 +508,7 @@
                         </ul>
                     </div>
                     <div class="mobile-screen-icone">
-                        <a href="javascript:void(0)">
+                        <a href="javascript:void(0)" class="modal-cardbox">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -532,40 +537,79 @@
     </header>
 
     <main>
-        <section class="hero-banner">
+        <section class="hero-banner-sec">
             <div class="container">
-                <div class="hero-warp">
-                    <h1 class="hero-banner-title">EUROPE’S <br> LARGEST <b class="hero-banner-subtitle">OFF ROAD
-                            CENTRE</b> </h1>
-                    <div class="richtext hero-banner-dec">
-                        <p>Welcome to Marsh MX, Europe’s largest off road bike , providing you with a first class,
-                            friendly service for all your off-road biking needs!</p>
+                <div class="hero-banner-wrap">
+                    <div class="banner-main-content">
+                        <span class="banner-main-subtitle">WHO WE ARE</span>
+                        <h2 class="banner-main-title">OUR <span class="banner-subtitle">STORY</span></h2>
+                        <div class="richtext banner-dec">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore dolore magna
+                                aliquyam erat, sed diam voluptua. accusam et justo duo dolores et ea rebum. Stet clita
+                                kasd gubergren, no sea takimata
+                            </p>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-primary">OUR SHOP</a>
                     </div>
-                    <div class="hero-banner-btn">
-                        <a href="javascript:void(0)" class="btn btn-primary">VIEW PRODUCT</a>
-                        <a href="javascript:void(0)" class="btn btn-secondery">SHOP ALL</a>
-                    </div>
-                    <div class="richtext hero-banner-newsletter">
-                        <p>
-                            SUBSCRIBE TO OUR NEWSLETTER <span class="highlights-title">HERE</span>
-                        </p>
+                    <div class="banner-main-img">
+                        <img src="assests/images/section/hero-banner.png" alt="banner-main-img">
+                        <img src="assests/images/section/mobile-hero.png" alt="banner-main-img">
                     </div>
                 </div>
-                <div class="hero-banner-img">
-                    <img src="assests/images/section/hero-banner.png" alt="hero-banner-img">
-                </div>
-
-                <div class="hero-banner-mobile-img">
-                    <img src="assests/images/section/mobile-hero.png" alt="hero-banner-img">
-                </div>
-
             </div>
         </section>
 
-        <section class="bike-slider-sec">
+        <section class="story-dec-sec">
+            <div class="container">
+                <h4 class="shop-main-title"><span class="shop-main-subtitle">ABOUT </span> US</h4>
+                <div class="our-story-wrap">
+                    <div class="richtext our-story-dec">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et
+                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusas Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam
+                            voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                            est Lorem ipsum dolor sit
+                            amet.
+                        </p>
+                    </div>
+                    <div class="richtext our-story-dec">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. Atuyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et
+                            ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam
+                            voluptua. Atuyam erat, sed diam voluptua. accusam et justo duo dolores et ea rebum. Stet
+                            clita kasd gubergren, no sea
+                            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                            sadipscing elitr, sed diam
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                            vero eos et accusas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="oue-team-sec">
             <div class="container">
                 <div class="main-silder-title">
-                    <h2 class="main-title">FEATURED BIKES</h2>
+                    <h2 class="main-title">OUR TEAM</h2>
                     <div class="silder-btn">
                         <a href="javascript:void(0)" class="pre-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -588,102 +632,54 @@
                         </a>
                     </div>
                 </div>
-                <div class="splide bike-slider" aria-label="Splide Basic HTML Example">
+                <div class="splide our-team-slider" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div class="silder-box">
-                                    <div class="img-changing">
-                                        <div class="slider-img">
-                                            <img src="assests/images/section/bike- (1).png" alt="bike-img">
-                                        </div>
-                                        <div class="slider-img-hov">
-                                            <img src="assests/images/section/bike- (2).png" alt="bike-img">
-                                        </div>
+                                <div class="team-block">
+                                    <div class="tec-man-img">
+                                        <img src="assests/images/section/tec-man.png" alt="tec-man-img">
                                     </div>
-                                    <h4 class="slider-title">
-                                        <b>HUSQVARNA</b><br> FC 350 2022
-                                    </h4>
-                                    <span class="h4 slider-title">
-                                        RRP: £8,749.00
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="silder-box">
-                                    <div class="img-changing">
-                                        <div class="slider-img">
-                                            <img src="assests/images/section/bike- (2).png" alt="bike-img">
-                                        </div>
-                                        <div class="slider-img-hov">
-                                            <img src="assests/images/section/bike- (1).png" alt="bike-img">
-                                        </div>
-                                    </div>
-                                    <h4 class="slider-title">
-                                        <b>HUSQVARNA</b><br> FC 350 2022
-                                    </h4>
-                                    <span class="h4 slider-title">
-                                        RRP: £8,749.00
-                                    </span>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="silder-box">
-                                    <div class="img-changing">
-                                        <div class="slider-img">
-                                            <img src="assests/images/section/bike- (3).png" alt="bike-img">
-                                        </div>
-                                        <div class="slider-img-hov">
-                                            <img src="assests/images/section/bike- (2).png" alt="bike-img">
-                                        </div>
-                                    </div>
-                                    <h4 class="slider-title">
-                                        <b>HUSQVARNA</b><br> FC 350 2022
-                                    </h4>
-                                    <span class="h4 slider-title">
-                                        RRP: £8,749.00
-                                    </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="auto-scroll-sec">
-            <div class="container">
-                <div class="splide auto-scroll-sider" aria-labelledby="carousel-heading">
-                    <h4 class="auto-slider-maintitle">EXPLORE BIKES</h4>
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="auto-box">
-                                    <div class="auto-img-box">
-                                        <img src="assests/images/section/auto-slider.png" alt="dec-img">
-                                        <h2 class="h1 auto-box-title">MOTOCROSS</h2>
-                                        <a href="javascript:void(0)" class="btn btn-primary auto-btn">EXPLORE
-                                            MOTOCROSS</a>
+                                    <div class="team-img-content">
+                                        <h5 class="sliedr-main-text">JOHN <span class="sliedr-main-subtext">SMITH</span>
+                                        </h5>
+                                        <span class="silder-subtitle">Workshop Technician</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="auto-box">
-                                    <div class="auto-img-box">
-                                        <img src="assests/images/section/auto-slider (1).png" alt="dec-img">
-                                        <h2 class="h1 auto-box-title">MOTOCROSS</h2>
-                                        <a href="javascript:void(0)" class="btn btn-primary auto-btn">EXPLORE
-                                            MOTOCROSS</a>
+                                <div class="team-block">
+                                    <div class="tec-man-img">
+                                        <img src="assests/images/section/tec-man.png" alt="tec-man-img">
+                                    </div>
+                                    <div class="team-img-content">
+                                        <h5 class="sliedr-main-text">JOHN <span class="sliedr-main-subtext">SMITH</span>
+                                        </h5>
+                                        <span class="silder-subtitle">Workshop Technician</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="auto-box">
-                                    <div class="auto-img-box">
-                                        <img src="assests/images/section/auto-slider (2).png" alt="dec-img">
-                                        <h2 class="h1 auto-box-title">MOTOCROSS</h2>
-                                        <a href="javascript:void(0)" class="btn btn-primary auto-btn">EXPLORE
-                                            MOTOCROSS</a>
+                                <div class="team-block">
+                                    <div class="tec-man-img">
+                                        <img src="assests/images/section/tec-man.png" alt="tec-man-img">
+                                    </div>
+                                    <div class="team-img-content">
+                                        <h5 class="sliedr-main-text">JOHN <span class="sliedr-main-subtext">SMITH</span>
+                                        </h5>
+                                        <span class="silder-subtitle">Workshop Technician</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="team-block">
+                                    <div class="tec-man-img">
+                                        <img src="assests/images/section/tec-man.png" alt="tec-man-img">
+                                    </div>
+                                    <div class="team-img-content">
+                                        <h5 class="sliedr-main-text">JOHN <span class="sliedr-main-subtext">SMITH</span>
+                                        </h5>
+                                        <span class="silder-subtitle">Workshop Technician</span>
                                     </div>
                                 </div>
                             </li>
@@ -693,32 +689,113 @@
             </div>
         </section>
 
-        <section class="main-tow-col">
-            <div class="container">
-                <div class="tow-colume-box">
-                    <div class="rider-img-col">
-                        <img src="assests/images/section/rider-img (2).png" alt="rider-img">
-                    </div>
-                    <div class="colume-content">
-                        <h3 class="tow-colume-title"><strong>A HOME FOR</strong> CHAMPIONS</h3>
-                        <div class="richtext tow-colume-dec">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                            </p>
+        <section class="fancy-block-sec">
+            <div class="fancy-img">
+                <div class="btn-play-box">
+                    <img src="assests/images/section/story-fancy-box.png" alt="bike-video">
+                    <a data-fancybox data-width="640" data-height="360"
+                        href="https://youtu.be/ESnrn1kAD4E?feature=shared" class="play-video-btn">
+                        <div class="flex-btn-blog">
+                            <img src="assests/images/vetors/play-btn.svg" alt="play-video">
+                            <span class="btn-subtitle">PLAY VIDEO</span>
                         </div>
-                        <a href="javascript:void(0)" class="btn btn-primary">VIEW FULL STORY</a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="parts-sec">
+        <section class="history-silder-sec">
             <div class="container">
-                <h3 class="parts-title">PARTS FINDER</h3>
-                <div class="parsts-btn">
-                    <a href="javascript:void(0)" class="btn btn-primary">LEARN MORE</a>
+                <div class="splide history-silder" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="his-date-block">
+                                    <span class="his-date">01/01/2010</span>
+                                    <div class="his-icone">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-circle">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="our-history-wrap">
+                                    <div class="history-img">
+                                        <img src="assests/images/section/his-img (1).png" alt="history-img">
+                                    </div>
+                                    <h5 class="his-title">OPENING <span class="his-subtitle">MARSH MX</span></h5>
+                                    <div class="richtext history-dec">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                            dolores et ea rebum. Stet clita.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="his-date-block">
+                                    <span class="his-date">01/01/2012</span>
+                                    <div class="his-icone">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-circle">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="our-history-wrap">
+                                    <div class="history-img">
+                                        <img src="assests/images/section/his-img (2).png" alt="history-img">
+                                    </div>
+                                    <h5 class="his-title">COMPETING IN THE <span class="his-subtitle">MX GP</span></h5>
+                                    <div class="richtext history-dec">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                            dolores et ea rebum. Stet clita.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="his-date-block">
+                                    <span class="his-date">01/01/2015</span>
+                                    <div class="his-icone">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-circle">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="our-history-wrap">
+                                    <div class="history-img">
+                                        <img src="assests/images/section/his-img (3).png" alt="history-img">
+                                    </div>
+                                    <h5 class="his-title">LAUNCH THE MARSH MX <span class="his-subtitle">RACE
+                                            TEAM</span></h5>
+                                    <div class="richtext history-dec">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore
+                                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                                            dolores et ea rebum. Stet clita.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -777,91 +854,44 @@
             </div>
         </section>
 
-        <section class="main-tow-col">
+        <section class="auto-scroll-sec">
             <div class="container">
-                <div class="tow-colume-box">
-                    <div class="rider-img-col">
-                        <img src="assests/images/section/rider-img (1).png" alt="rider-img">
-                    </div>
-                    <div class="colume-content">
-                        <h3 class="tow-colume-title">FINANCE YOUR DREAM BIKE</h3>
-                        <div class="richtext tow-colume-dec">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                            </p>
-                        </div>
-                        <a href="javascript:void(0)" class="btn btn-primary">LEARN MORE</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="location-sec">
-            <div class="container">
-                <div class="splide liner-silder">
+                <div class="splide auto-scroll-sider" aria-labelledby="carousel-heading">
+                    <h4 class="auto-slider-maintitle">EXPLORE BIKES</h4>
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div>
-                                    <span class="oquotatin-icone h4">
-                                        ”
-                                    </span>
-                                    <h4 class="location-title">
-                                        <span class="location-sub-title">MARSH MX HAVE A GREAT RANGE OF BIKES AND
-                                            GEAR.</span> IT’S WELL WORTH A LOOK IF YOU’RE IN THE AREA.
-                                    </h4>
-                                    <span class="min-title">Client, Location</span>
+                                <div class="auto-box">
+                                    <div class="auto-img-box">
+                                        <img src="assests/images/section/auto-slider.png" alt="dec-img">
+                                        <h2 class="h1 auto-box-title">MOTOCROSS</h2>
+                                        <a href="javascript:void(0)" class="btn btn-primary auto-btn">EXPLORE
+                                            MOTOCROSS</a>
+                                    </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div>
-                                    <span class="oquotatin-icone h4">
-                                        ”
-                                    </span>
-                                    <h4 class="location-title">
-                                        <span class="location-sub-title">MARSH MX HAVE A GREAT RANGE OF BIKES AND
-                                            GEAR.</span> IT’S WELL WORTH A LOOK IF YOU’RE IN THE AREA.
-                                    </h4>
-                                    <span class="min-title">Client, Location</span>
+                                <div class="auto-box">
+                                    <div class="auto-img-box">
+                                        <img src="assests/images/section/auto-slider (1).png" alt="dec-img">
+                                        <h2 class="h1 auto-box-title">MOTOCROSS</h2>
+                                        <a href="javascript:void(0)" class="btn btn-primary auto-btn">EXPLORE
+                                            MOTOCROSS</a>
+                                    </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div>
-                                    <span class="oquotatin-icone h4">
-                                        ”
-                                    </span>
-                                    <h4 class="location-title">
-                                        <span class="location-sub-title">MARSH MX HAVE A GREAT RANGE OF BIKES AND
-                                            GEAR.</span> IT’S WELL WORTH A LOOK IF YOU’RE IN THE AREA.
-                                    </h4>
-                                    <span class="min-title">Client, Location</span>
+                                <div class="auto-box">
+                                    <div class="auto-img-box">
+                                        <img src="assests/images/section/auto-slider (2).png" alt="dec-img">
+                                        <h2 class="h1 auto-box-title">MOTOCROSS</h2>
+                                        <a href="javascript:void(0)" class="btn btn-primary auto-btn">EXPLORE
+                                            MOTOCROSS</a>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="liner-slider-box">
-                        <div class="my-splide-progress">
-                            <div class="my-splide-progress-bar"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="help-sec">
-            <div class="container">
-                <div class="footer-banner">
-                    <div class="footer-banner-wrap">
-                        <h2 class="h1 help-main-title">
-                            NOT WHAT YOU'RE LOOKING FOR? <span class="helping-sub-title">WE CAN HELP</span>
-                        </h2>
-                        <a href="javascript:void(0)" class="btn btn-primary">GET IN TOUCH</a>
-                    </div>
-                </div>
-                <div class="img-tras">
-                    <img src="assests/images/vetors/footer-banner-tra.svg" alt="footer-banner">
                 </div>
             </div>
         </section>
@@ -1074,7 +1104,6 @@
     <script src="assests/js/splide-extension-auto-scroll.min.js"></script>
 
     <!-- main js  -->
-
     <script src="assests/js/main.js"></script>
 </body>
 

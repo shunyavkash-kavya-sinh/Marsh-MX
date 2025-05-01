@@ -1,17 +1,17 @@
-$(document).ready(function () {
-  $(".js-example-basic-single").select2();
-  $(".js-example-basic-single").select2({
-    minimumResultsForSearch: Infinity,
-  });
+// $(document).ready(function () {
+//   $(".js-example-basic-single").select2();
+//   $(".js-example-basic-single").select2({
+//     minimumResultsForSearch: Infinity,
+//   });
 
-  var reviewSlider = new Splide(".review-slider", {
-    perPage: 1,
-    gap: "2rem",
-    arrows: false,
-  });
+//   var reviewSlider = new Splide(".review-slider", {
+//     perPage: 1,
+//     gap: "2rem",
+//     arrows: false,
+//   });
 
-  reviewSlider.mount();
-});
+//   reviewSlider.mount();
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
   const filterButtons = document.querySelectorAll(".filter-btn li a");
@@ -162,33 +162,50 @@ $(document).ready(function () {
 
 // swiper slider
 
-var splide3 = new Splide(".bike-slider", {
+var brandLogo = new Splide(".brand-logo", {
+  type: "loop",
+  focus: "center",
+  perMove: 1,
+  perPage: 5,
+  gap: "20px",
+  arrows: false,
+  pagination: false,
+  autoplay: {
+    speed: 1,
+  },
+  breakpoints: {
+    768: {
+      perPage: 4,
+      gap: "30px",
+    },
+    640: {
+      perPage: 3,
+      gap: "30px",
+    },
+  },
+});
+brandLogo.mount(window.splide.Extensions);
+
+var autoScroll = new Splide(".auto-scroll-sider", {
   perPage: 2,
   rewind: true,
   drag: "free",
   gap: "32px",
   arrows: false,
   pagination: false,
+  gap: "150px",
   breakpoints: {
+    768: {
+      perPage: 2,
+      gap: "30px",
+    },
     640: {
       perPage: 1,
       gap: "30px",
     },
   },
 });
-
-splide3.mount();
-
-document
-  .getElementsByClassName("pre-btn")[0]
-  .addEventListener("click", function () {
-    splide3.go("-1");
-  });
-document
-  .getElementsByClassName("pre-next")[0]
-  .addEventListener("click", function () {
-    splide3.go("+1");
-  });
+autoScroll.mount();
 
 var socialImg = new Splide(".social-img", {
   type: "loop",
@@ -219,26 +236,61 @@ var socialImg = new Splide(".social-img", {
 });
 socialImg.mount(window.splide.Extensions);
 
-var autoScroll = new Splide(".auto-scroll-sider", {
-  perPage: 2,
-  rewind: true,
-  drag: "free",
-  gap: "32px",
-  arrows: false,
-  pagination: false,
-  gap: "150px",
-  breakpoints: {
-    768: {
-      perPage: 2,
-      gap: "30px",
+if ($(".history-silder.splide").length > 0) {
+  const historySilder = new Splide(".history-silder", {
+    type: "loop",
+    drag: "free",
+    focus: "center",
+    gap: "35px",
+    arrows: false,
+    perPage: 3,
+    pagination: false,
+    autoScroll: {
+      speed: 1,
     },
-    640: {
-      perPage: 1,
-      gap: "30px",
+    breakpoints: {
+      1024: {
+        perPage: 2,
+      },
+      640: {
+        perPage: 1,
+      },
     },
-  },
-});
-autoScroll.mount();
+  });
+  historySilder.mount(window.splide.Extensions);
+}
+if ($(".our-team-slider").length > 0) {
+  var teamSlider = new Splide(".our-team-slider", {
+    perPage: 3,
+    gap: "20px",
+    rewind: true,
+    arrows: false,
+    pagination: false,
+    drag: "free",
+    breakpoints: {
+      1024: {
+        perPage: 2,
+        gap: "30px",
+      },
+      640: {
+        perPage: 1,
+        gap: "30px",
+      },
+    },
+  });
+  teamSlider.mount();
+}
+
+document
+  .getElementsByClassName("pre-btn")[0]
+  .addEventListener("click", function () {
+    teamSlider.go("-1");
+  });
+document
+  .getElementsByClassName("pre-next")[0]
+  .addEventListener("click", function () {
+    teamSlider.go("+1");
+  });
 
 var linerSilder = new Splide(".liner-silder", {
   type: "loop",
@@ -257,26 +309,29 @@ linerSilder.on("mounted move", function () {
 });
 linerSilder.mount();
 
-var brandLogo = new Splide(".brand-logo", {
-  type: "loop",
-  focus: "center",
-  perMove: 1,
-  perPage: 5,
-  gap: "20px",
+var bikeSlider = new Splide(".bike-slider", {
+  perPage: 2,
+  rewind: true,
+  drag: "free",
+  gap: "32px",
   arrows: false,
   pagination: false,
-  autoplay: {
-    speed: 1,
-  },
   breakpoints: {
-    768: {
-      perPage: 4,
-      gap: "30px",
-    },
     640: {
-      perPage: 3,
+      perPage: 1,
       gap: "30px",
     },
   },
 });
-brandLogo.mount(window.splide.Extensions);
+bikeSlider.mount();
+
+document
+  .getElementsByClassName("pre-btn")[0]
+  .addEventListener("click", function () {
+    bikeSlider.go("-1");
+  });
+document
+  .getElementsByClassName("pre-next")[0]
+  .addEventListener("click", function () {
+    bikeSlider.go("+1");
+  });
