@@ -225,9 +225,6 @@ if ($(".social-img").length > 0) {
     gap: "15px",
     arrows: false,
     pagination: false,
-    autoplay: {
-      speed: 1,
-    },
     breakpoints: {
       1024: {
         perPage: 4,
