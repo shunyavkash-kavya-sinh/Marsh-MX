@@ -269,6 +269,10 @@ header {
   height: 100%;
 }
 
+header ul {
+  list-style: none;
+}
+
 .menu-bar > li:not(:first-child) {
   margin-left: 22px;
   border-left: 1px solid #00000029;
